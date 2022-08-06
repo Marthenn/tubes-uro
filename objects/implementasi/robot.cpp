@@ -27,6 +27,22 @@ void robot::putar(string arah){
     this->front = arah;
 }
 
+//putar robot ke kiri
+void robot::putarKiri(){
+    if (this->getFront() == "atas")this->front="kiri";
+    else if (this->getFront() == "kiri")this->front="bawah";
+    else if (this->getFront() == "bawah")this->front="kanan";
+    else this->front="atas";
+}
+
+//putar robot ke kanan
+void robot::putarKanan(){
+    if (this->getFront() == "atas")this->front="kanan";
+    else if (this->getFront() == "kanan")this->front="bawah";
+    else if (this->getFront() == "bawah")this->front="kiri";
+    else this->front="atas";
+}
+
 //robot bergerak maju sesuai arah hadapny
 void robot::maju(){
     if (this->front == "atas"){
@@ -51,13 +67,47 @@ pair <int, int> robot::getLocation(){
     return this->location;
 }
 
-bool getFrontWall(){
+bool robot::getFrontWall(){
+    if (this->getFront()=="atas"){
+        return peta[this->getLocation().second][this->getLocation().first].getNorth();
+    }
+    else if (this->getFront()=="bawah"){
+        return peta[this->getLocation().second][this->getLocation().first].getSouth();
+    }
+    else if (this->getFront()=="kiri"){
+        return peta[this->getLocation().second][this->getLocation().first].getWest();
+    }
+    else{
+        return peta[this->getLocation().second][this->getLocation().first].getEast();
+    }
 }
 
-bool getLeftWall(){
-
+bool robot::getLeftWall(){
+    if (this->getFront()=="kanan"){
+        return peta[this->getLocation().second][this->getLocation().first].getNorth();
+    }
+    else if (this->getFront()=="kiri"){
+        return peta[this->getLocation().second][this->getLocation().first].getSouth();
+    }
+    else if (this->getFront()=="atas"){
+        return peta[this->getLocation().second][this->getLocation().first].getWest();
+    }
+    else{
+        return peta[this->getLocation().second][this->getLocation().first].getEast();
+    }
 }
 
-bool getRightWall(){
-
+bool robot::getRightWall(){
+    if (this->getFront()=="kiri"){
+        return peta[this->getLocation().second][this->getLocation().first].getNorth();
+    }
+    else if (this->getFront()=="kanan"){
+        return peta[this->getLocation().second][this->getLocation().first].getSouth();
+    }
+    else if (this->getFront()=="bawah"){
+        return peta[this->getLocation().second][this->getLocation().first].getWest();
+    }
+    else{
+        return peta[this->getLocation().second][this->getLocation().first].getEast();
+    }
 }

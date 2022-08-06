@@ -37,13 +37,17 @@ node::node(const node &node, int index){
 node::~node(){}
 
 //ambil info dinding di sampingnya
-bool node::getWall(){
-    bool wall[4];
-    wall[0] = north;
-    wall[1] = west;
-    wall[2] = east;
-    wall[3] = south;
-    return wall;
+bool node::getNorth(){
+    return this->north;
+}
+bool node::getSouth(){
+    return this->south;
+}
+bool node::getEast(){
+    return this->east;
+}
+bool node::getWest(){
+    return this->west;
 }
 
 //cek room

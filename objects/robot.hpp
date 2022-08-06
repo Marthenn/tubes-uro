@@ -16,6 +16,8 @@ class robot{
         ~robot();
 
         void putar(string arah);
+        void putarKiri();
+        void putarKanan();
         void maju();
 
         string getFront();

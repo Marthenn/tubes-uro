@@ -23,7 +23,10 @@ class node{
         ~node();
 
         //ambil info dinding di sampingnya
-        bool getWall();
+        bool getNorth();
+        bool getSouth();
+        bool getWest();
+        bool getEast();
 
         //cek room;
         bool getRoom();
