@@ -1,8 +1,8 @@
 #include "dataNode.hpp"
 #include <vector>
 
-//status kunjungan room robot
-int room_visited = 0;
+//apakah robot sudah pernah kembali ke home
+bool back_home = 0;
 
 //jalur yang digunakan robot
 vector<int> path;
