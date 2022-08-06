@@ -1,23 +1,27 @@
 #include "movement\following.hpp"
 
-void putarKiri(robot robot){
-    if (robot.getFront() == "atas")robot.putar("kiri");
-    else if (robot.getFront() == "kiri")robot.putar("bawah");
-    else if (robot.getFront() == "bawah")robot.putar("kanan");
-    else robot.putar("atas");
+void leftFollowing(robot robot){
+    do{
+        if(!robot.getLeftWall()){
+            robot.putarKiri();
+        }
+        else if (robot.getLeftWall() && robot.getFrontWall()){
+            robot.putarKanan();
+        }
+        robot.maju();
+    }
+    while(!peta[robot.getLocation().second][robot.getLocation().first].getHome());
 }
 
-void putarKanan(robot robot){
-    if (robot.getFront() == "atas")robot.putar("kanan");
-    else if (robot.getFront() == "kanan")robot.putar("bawah");
-    else if (robot.getFront() == "bawah")robot.putar("kiri");
-    else robot.putar("atas");
-}
-
-void leftFollowing(const robot&robot){
-    
-}
-
-void rightFollowing(const robot&robot){
-
+void rightFollowing(robot robot){
+    do{
+        if(!robot.getRightWall()){
+            robot.putarKanan();
+        }
+        else if (robot.getRightWall() && robot.getFrontWall()){
+            robot.putarKiri();
+        }
+        robot.maju();
+    }
+    while(!peta[robot.getLocation().second][robot.getLocation().first].getHome());
 }
