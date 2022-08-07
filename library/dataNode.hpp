@@ -1,7 +1,7 @@
 #ifndef __dataNode_hpp__
 #define __dataNode_hpp__
 
-#include "node.hpp"
+#include "..\objects\node.hpp"
 
 node n0; //placeholder
 node n1(true, true, true, false, false, false,1);

@@ -1,4 +1,4 @@
-#include "interface\interface.hpp"
+#include "..\interface.hpp"
 
 void printMap(){
     for (int i = 0; i < height; i++){

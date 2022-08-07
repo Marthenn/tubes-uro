@@ -1,4 +1,4 @@
-#include "objects\node.hpp"
+#include "..\node.hpp"
 
 //default constructor
 node::node(){
@@ -61,12 +61,12 @@ bool node::getHome(){
 }
 
 //set home
-bool node::setHome(bool isHome){
+void node::setHome(bool isHome){
     this->isHome = isHome;
 }
 
 //set room
-bool node::setRoom(bool isRoom){
+void node::setRoom(bool isRoom){
     this->isRoom = isRoom;
 }
 
@@ -76,6 +76,6 @@ int node::getIndex(){
 }
 
 //set index
-int node::setIndex(int index){
+void node::setIndex(int index){
     this->index = index;
 }

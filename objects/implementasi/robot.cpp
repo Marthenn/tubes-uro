@@ -1,4 +1,4 @@
-#include "objects\robot.hpp"
+#include "..\robot.hpp"
 
 //default constructor
 robot::robot(){
@@ -19,8 +19,7 @@ robot::robot(const robot &robot){
 }
 
 //destructor kosong
-robot::~robot(){
-}
+robot::~robot(){}
 
 //ubah arah gerak
 void robot::putar(string arah){

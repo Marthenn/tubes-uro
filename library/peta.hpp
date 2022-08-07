@@ -1,3 +1,6 @@
+#ifndef __PETA_HPP__
+#define __PETA_HPP__
+
 #include <iostream>
 #include "dataNode.hpp"
 using namespace std;
@@ -11,3 +14,5 @@ node peta[height][width] = {
     {n3, n6, n11, n14, n0, n17, n21, n26, n29},
     {n4, n5, n12, n13, n19, n18, n20, n27, n28},
 };
+
+#endif // __PETA_HPP__

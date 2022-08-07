@@ -35,16 +35,16 @@ class node{
         bool getHome();
 
         //ubah status home
-        bool setHome(bool isHome);
+        void setHome(bool isHome);
 
         //ubah status room
-        bool setRoom(bool isRoom);
+        void setRoom(bool isRoom);
 
         //dapatkan index node skrg
         int getIndex();
 
         //ubah index node
-        int setIndex(int index);
+        void setIndex(int index);
 };
 
 #endif

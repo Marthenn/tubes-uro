@@ -2,7 +2,7 @@
 #define __ROBOT_HPP__
 
 #include <iostream>
-#include "library\peta.hpp"
+#include "..\library\peta.hpp"
 using namespace std;
 
 class robot{
