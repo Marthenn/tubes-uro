@@ -6,7 +6,7 @@ node n2(false, true, false, false, false, false,2);
 node n3(false, true, true, false, false, false,3);
 node n4(false, true, false, true, false, false,4);
 node n5(true, false, false, true, false, false,5);
-node n6(false, true, true, true, true, false,6);
+node n6(false, true, true, true, false, false,6);
 node n7(false, false, false, false, false, false,7);
 node n8(n1,8);
 node n9(n1,9);
