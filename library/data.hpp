@@ -5,6 +5,7 @@
 #include <vector>
 
 extern bool back_home;
+extern char home;
 extern vector<int> path;
 extern robot r;
 
