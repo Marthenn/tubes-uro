@@ -4,6 +4,7 @@
 #include "..\library\data.hpp"
 #include "..\library\peta.hpp"
 #include "..\objects\robot.hpp"
+#include "..\movement\following.hpp"
 
 /**
  *menampilkan posisi peta sekarang
@@ -25,5 +26,10 @@ void start();
  *@param robot robot yang akan dijalankan
  */
 void jalan(robot robot);
+
+/**
+ *menampilkan pesan selesai dan rute robot yang diambil
+ */
+void selesai();
 
 #endif

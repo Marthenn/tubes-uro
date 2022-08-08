@@ -4,5 +4,6 @@
 
 int main(){
     start();
-    system("cls");
+    jalan(r);
+    selesai();
 }
