@@ -1,0 +1,11 @@
+#include "..\peta.hpp"
+
+//Pendefinisian Peta
+const int width = 9;
+const int height = 4;
+node peta[4][9] = {
+    {n1, n8, n9, n0, n0, n0, n23, n24, n31},
+    {n2, n7, n10, n15, n0, n16, n22, n25, n30},
+    {n3, n6, n11, n14, n0, n17, n21, n26, n29},
+    {n4, n5, n12, n13, n19, n18, n20, n27, n28},
+};

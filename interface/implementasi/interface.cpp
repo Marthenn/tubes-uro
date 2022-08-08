@@ -28,3 +28,14 @@ void printPath(){
     }
     cout<<endl;
 }
+
+void start(){
+    cout<<"Halo, selamat datang pada program hasil cakru 14 KRSRI Programming\n";
+    cout<<"Program ini akan mensimulasikan gerak robot\n";
+    cout<<"Gerak robot yang disimulasikan akan menggunakan denah KRSRI Nasional 2022\n";
+    cout<<"Perlu diperhatikan bahwa robot tidak menggunakan jalur yang paling optimal\n";
+    system("pause");
+}
+
+void jalan(robot robot){
+}
