@@ -19,6 +19,7 @@ class robot{
         void putarKiri();
         void putarKanan();
         void maju();
+        void setLocation(pair <int,int> location);
 
         string getFront();
         pair <int, int> getLocation();

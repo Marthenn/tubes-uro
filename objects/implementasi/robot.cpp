@@ -58,6 +58,11 @@ void robot::maju(){
     }
 }
 
+//menentukan posisi robot
+void robot::setLocation(pair <int,int> location){
+    this->location = location;
+}
+
 string robot::getFront(){
     return this->front;
 }
