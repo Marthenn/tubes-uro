@@ -23,14 +23,14 @@ node::node(bool north, bool west, bool east, bool south, bool isRoom, bool isHom
 }
 
 //copy constructor dengan merubah index
-node::node(const node &node, int index){
+node::node(const node &node){
     this->north = node.north;
     this->west = node.west;
     this->east = node.east;
     this->south = node.south;
     this->isRoom = node.isRoom;
     this->isHome = node.isHome;
-    this->index = index;
+    this->index = node.index;
 }
 
 //destructor kosong

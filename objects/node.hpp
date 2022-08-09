@@ -17,7 +17,7 @@ class node{
         node(bool north, bool west, bool east, bool south, bool isRoom, bool isHome, int index);
 
         //copy constructor dengan merubah index
-        node(const node &node, int index);
+        node(const node &node);
 
         //destructor
         ~node();
