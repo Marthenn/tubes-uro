@@ -1,3 +1,2 @@
 # TO DO LIST
-- Rapikan Penyimpanan Peta Node
-- Buat Janji Demo
+- Perbaiki gerakan maju robot (ngebug gak mau maju)
