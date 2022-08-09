@@ -23,9 +23,8 @@ void start();
 
 /**
  *menjalankan robot dengan left dan right following secara beruntun dengan tetap memperhatikan aspek CLI
- *@param robot robot yang akan dijalankan
  */
-void jalan(robot robot);
+void jalan();
 
 /**
  *menampilkan pesan selesai dan rute robot yang diambil

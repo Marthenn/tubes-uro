@@ -27,7 +27,6 @@ void printPath(){
         cout<<path[i]<<"->";
     }
     cout<<path[path.size()-1]<<endl;
-    system("pause");
     cout<<endl;
 }
 
@@ -56,14 +55,14 @@ void start(){
     printMap();
 }
 
-void jalan(robot robot){
+void jalan(){
     do{
-        path.push_back(peta[r.getLocation().second][r.getLocation().first].getIndex());
-        if(back_home)rightFollowing(robot);
-        else leftFollowing(robot);
+        if(peta[r.getLocation().second][r.getLocation().first].getIndex()!=-1&&peta[r.getLocation().second][r.getLocation().first].getIndex()!=0)path.push_back(peta[r.getLocation().second][r.getLocation().first].getIndex());
+        if(back_home)rightFollowing();
+        else leftFollowing();
         printMap();
     }
-    while(peta[r.getLocation().second][r.getLocation().first].getHome());
+    while(!peta[r.getLocation().second][r.getLocation().first].getHome());
 }
 
 void selesai(){
