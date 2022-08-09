@@ -5,5 +5,8 @@
 int main(){
     start();
     jalan(r);
+    back_home = true;
+    jalan(r);
     selesai();
+    printMap();
 }
