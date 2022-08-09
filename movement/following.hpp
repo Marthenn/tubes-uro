@@ -5,7 +5,7 @@
 #include "..\library\data.hpp"
 
 
-void leftFollowing(robot robot);
-void rightFollowing(robot robot);
+void leftFollowing();
+void rightFollowing();
 
 #endif

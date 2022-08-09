@@ -1,23 +1,29 @@
 #include "..\following.hpp"
 
 //algoritma following dengan tempel tembok kiri (hanya satu langkah)
-void leftFollowing(robot robot){
-    if(!robot.getLeftWall()){
-        robot.putarKiri();
+void leftFollowing(){
+    if(!r.getLeftWall()){
+        r.putarKiri();
     }
-    else if (robot.getLeftWall() && robot.getFrontWall()){
-        robot.putarKanan();
+    else if (r.getLeftWall() && r.getFrontWall() && !r.getRightWall()){
+        r.putarKanan();
     }
-    robot.maju();
+    else if (r.getFrontWall() && r.getLeftWall() && r.getRightWall()){
+        r.putarKiri();r.putarKiri();
+    }
+    r.maju();
 }
 
 //algoritma following dengan tempel tembok kanan (hanya satu langkah)
-void rightFollowing(robot robot){
-    if(!robot.getRightWall()){
-        robot.putarKanan();
+void rightFollowing(){
+    if(!r.getRightWall()){
+        r.putarKanan();
     }
-    else if (robot.getRightWall() && robot.getFrontWall()){
-        robot.putarKiri();
+    else if (r.getRightWall() && r.getFrontWall() && !r.getLeftWall()){
+        r.putarKiri();
     }
-    robot.maju();
+    else if (r.getFrontWall() && r.getLeftWall() && r.getRightWall()){
+        r.putarKanan();r.putarKanan();
+    }
+    r.maju();
 }
