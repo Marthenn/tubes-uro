@@ -42,17 +42,16 @@ void start(){
 
     if(home == 'l'){
         //set initial values
-        r.setLocation({2,0});
-        n3.setHome(true);
-        n6.setRoom(true);
+        r.setLocation({0,2});
+        peta[2][0].setHome(true);
+        peta[2][1].setRoom(true);
     }
     else{
         //set initial values
-        r.setLocation({2,8});
-        n29.setHome(true);
-        n26.setRoom(true);
+        r.setLocation({8,2});
+        peta[2][8].setHome(true);
+        peta[2][7].setRoom(true);
     }
-
     cout<<"\nKondisi awal:\n";
     printMap();
 }
