@@ -4,9 +4,9 @@
 
 int main(){
     start();
-    jalan(r);
+    jalan();
     back_home = true;
-    jalan(r);
+    jalan();
+    path.push_back(peta[r.getLocation().second][r.getLocation().first].getIndex());
     selesai();
-    printMap();
 }
